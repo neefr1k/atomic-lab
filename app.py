@@ -20,7 +20,7 @@ def get_user_status(user):
     elif user:
         return "Обычный пользователь"
     else:
-        return "Гость"
+        return "Гость" 
 
 
 # запуск программы
