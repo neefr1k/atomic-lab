@@ -1,7 +1,7 @@
                                                            Atomic Lab
 
   СКРИНШОТЫ
-
+ 
   1. Атомарность коммитов
   <img width="836" height="203" alt="image" src="https://github.com/user-attachments/assets/f279956d-d914-422c-823e-73e765cefc9f" />
 
