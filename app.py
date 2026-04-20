@@ -1,6 +1,9 @@
-def login(user, password):
+def login(username, password):
+ if not isinstance(username, str) or not isinstance(password, str):
+    print("Ошибка: неверный тип данных")
+    return False
     # валидация
-    if not user or not password:
+    if not username or not password:
         print("Ошибка: пустые данные")
         return False
 
@@ -15,18 +18,18 @@ def login(user, password):
 
 def get_user_status(user):
     # новая функция
-    if user == "admin":
+    if username == "admin":
         return "Администратор"
-    elif user:
+    elif username:
         return "Обычный пользователь"
     else:
         return "Гость" 
 
 
 # запуск программы
-user = input("Введите имя: ")
+username = input("Введите имя: ")
 password = input("Введите пароль: ")
 
-if login(user, password):
-    status = get_user_status(user)
+if login(username, password):
+    status = get_username_status(username)
     print("Статус:", status)
