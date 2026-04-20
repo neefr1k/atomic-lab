@@ -33,3 +33,5 @@ password = input("Введите пароль: ")
 if login(username, password):
     status = get_username_status(username)
     print("Статус:", status)
+def is_admin(username):
+    return username == "admin"
